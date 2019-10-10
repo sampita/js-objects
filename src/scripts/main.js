@@ -59,3 +59,29 @@ console.log(`The wardrobe is made by ${wardrobe.manufacturer}`);
 console.log(`The wardrobe is full of ${wardrobe.contents[0]}, ${wardrobe.contents[1]}, ${wardrobe.contents[2]}, ${wardrobe.contents[3]}, ${wardrobe.contents[4]}`);
 console.log(`The wardrobe is ${wardrobe.depth} inches deep`);
 console.log(`The wardrobe is ${wardrobe.width} inches wide`);
+
+//Lightning Exercise 5:
+
+const empireStateBuilding = {
+    stories: 103,
+    height: 1453,
+    address: "350 Fifth Avenue, Manhattan, New York 10118",
+    squareFeet: 2768591,
+    constructionDate: 1931,
+    cost: 40948900,
+    owner: "Empire State Realty Trust",
+    eastWestLength: 424,
+    northSouthLength: 187,
+    architect: "Shreve, Lamb & Harmon"
+}
+
+console.log(`The empire state building is ${empireStateBuilding.height} high with ${empireStateBuilding.stories} stories. The east west length is ${empireStateBuilding.eastWestLength} and the north south length is ${empireStateBuilding.northSouthLength}. It is ${empireStateBuilding.squareFeet} square feet big.`)
+
+// Lightning Exercise 6:
+const addressKey = "address"
+const constructionKey = "constructionDate"
+const ownerKey = "owner"
+const costKey = "cost"
+const architectKey = "architect"
+
+console.log(`The empire state building is at ${empireStateBuilding[addressKey]}. It was built in ${empireStateBuilding[constructionKey]} by ${empireStateBuilding[architectKey]}. It cost ${empireStateBuilding[costKey]} and is owned by ${empireStateBuilding}.`)
